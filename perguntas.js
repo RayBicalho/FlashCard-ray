@@ -1,6 +1,6 @@
 criaCartao(
     'Programação',
-    'qual o objetivo da programação?',
+    'Qual o objetivo da programação?',
     'possibilita a existência dos softwares e, por consequência, a utilização mais prática dos hardwares'
 )
 
