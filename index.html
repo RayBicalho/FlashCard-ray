@@ -3,161 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards de Agropecuária</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            color: white;
-            background-image: url('https://images.unsplash.com/photo-1542382903-8d29837517c2'); /* Substitua pela sua imagem */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-
-        .site-container {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            max-width: 90%;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            justify-items: center;
-        }
-
-        .card {
-            width: 100%;
-            max-width: 300px;
-            height: 200px;
-            perspective: 1000px;
-            cursor: pointer;
-        }
-
-        .card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-        }
-
-        .card.flipped .card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .card-front, .card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            box-sizing: border-box;
-            border-radius: 10px;
-        }
-
-        .card-front {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        .card-back {
-            background-color: #8BC34A;
-            color: black;
-            transform: rotateY(180deg);
-        }
-
-        .card-front p, .card-back p {
-            font-size: 1.1em;
-            font-weight: bold;
-            line-height: 1.4;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Flashcard</title>
 </head>
 <body>
-
-    <div class="site-container">
-        <h1>Flashcards de Agropecuária</h1>
-        <div class="card-grid">
-
-            <div class="card" onclick="this.classList.toggle('flipped')">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <p>O que é agricultura de precisão?</p>
+    <main>
+        <section id="container">
+            <!-- <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Programação</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é JavaScript?</p>
                     </div>
-                    <div class="card-back">
-                        <p>É uma abordagem de gestão que utiliza tecnologias como GPS, sensores e drones para otimizar a produção agrícola.</p>
+                    <div class="cartao__conteudo__resposta">
+                        <p>O JavaScript é uma linguagem de programação</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="card" onclick="this.classList.toggle('flipped')">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <p>Qual a diferença entre pecuária intensiva e extensiva?</p>
-                    </div>
-                    <div class="card-back">
-                        <p>A pecuária intensiva é realizada em espaços confinados, com alta tecnologia. A extensiva é feita em grandes áreas de pasto.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" onclick="this.classList.toggle('flipped')">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <p>O que são os OGM na agropecuária?</p>
-                    </div>
-                    <div class="card-back">
-                        <p>São Organismos Geneticamente Modificados, criados para resistir a pragas, doenças ou melhorar o valor nutricional.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card" onclick="this.classList.toggle('flipped')">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <p>Qual a importância da irrigação na agricultura?</p>
-                    </div>
-                    <div class="card-back">
-                        <p>É essencial para garantir a umidade do solo e o crescimento das plantas, especialmente em regiões com poucas chuvas.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" onclick="this.classList.toggle('flipped')">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <p>O que é rotação de culturas?</p>
-                    </div>
-                    <div class="card-back">
-                        <p>É a prática de alternar o cultivo de diferentes espécies vegetais em uma mesma área, para manter a fertilidade do solo e controlar pragas.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
+            </article> -->
+        </section>
+    </main>
+    <footer>
+        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="perguntas.js"></script>
 </body>
 </html>
